@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipamentos",
+  "info": {
+    "singularName": "equipamento",
+    "pluralName": "equipamentos",
+    "displayName": "Equipamento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "integer"
+    }
+  }
+}

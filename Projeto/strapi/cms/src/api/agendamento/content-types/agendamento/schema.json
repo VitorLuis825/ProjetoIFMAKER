@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agendamentos",
+  "info": {
+    "singularName": "agendamento",
+    "pluralName": "agendamentos",
+    "displayName": "Agendamento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "horarioEntrada": {
+      "type": "string"
+    },
+    "horarioSaida": {
+      "type": "string"
+    },
+    "equipamentos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::equipamento.equipamento"
+    }
+  }
+}
