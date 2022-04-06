@@ -15,29 +15,30 @@ export default ()=>{
         <Header />
         <form>
             <label>
-                Insira seu nome: <input type='text' onChange={(e)=>{setNome(e)}}></input>
+                Insira seu nome: <input type='text' onChange={(e)=>{setNome(e.target.value)}}></input>
             </label>
             <label>
-                Insira seu telefone: <input type='text' onChange={(e)=>{setTel(e)}}/>
+                Insira seu telefone: <input type='text' onChange={(e)=>{setTel(e.target.value)}}/>
             </label>
             <label>
-                Insira o horario de entrada: <input type='text' onChange={(e)=>{setHoraEntrada(e)}}/>
+                Insira o horario de entrada: <input type='text' onChange={(e)=>{setHoraEntrada(e.target.value)}}/>
             </label>
             <label>
-                Insira o horario de saída: <input type='text' onChange={(e)=>{setHoraSaida(e)}}/>
+                Insira o horario de saída: <input type='text' onChange={(e)=>{setHoraSaida(e.target.value)}}/>
             </label>
             <input type='submit' onClick={(e)=>{
             e.preventDefault()
             console.log('oi')
-            usePost('http://localhost:1337/api/agendamentos',{
+            let obj = {
                 "data": {
                 "nome": nome,
                 "tel": tel,
                 "horaEntrada": horaEntrada,
                 "horaSaida": horaSaida
                 }
-            })
-
+            }
+            console.log(obj)
+            usePost('http://localhost:1337/api/agendamentos',obj)
 }}/>
         </form>
         </div>
