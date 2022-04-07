@@ -1,19 +1,9 @@
 import './App.css'
 import Home from './pages/index'
-import Agendamento from './pages/agendar'
+import EspacoAgendamento from './pages/EspacoAgendamento'
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-/*let data = [{
-  nome:'Vitor',
-  horarioEntrada : '13:00',
-  horarioSaida : '17:00',
-  tel : '(67) 99951-3248',
-  id : 1,
-  equipamentos : [{name:'charles',id:1},{name:'rodirgo',id:2}]
-}]*/
-
-//Nao consegui fazer a rota do cardlist funcionar.
 function App() {
 
   return (
@@ -21,7 +11,7 @@ function App() {
       <div className="App">
         <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='Agendamento' element={<Agendamento />}/> 
+        <Route path='Agendamentos/espaco' element={<EspacoAgendamento />}/> 
         </Routes>
       </div>
     </BrowserRouter>

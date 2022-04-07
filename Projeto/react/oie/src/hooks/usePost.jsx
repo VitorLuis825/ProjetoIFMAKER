@@ -11,4 +11,5 @@ export default (url,data)=>{
             return error
         }
     }
+    post()
 }

@@ -1,0 +1,25 @@
+.calendario-container{
+    box-sizing: border-box;
+
+    padding-right: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 100%;
+}
+.calendario{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: aqua;
+    display: flex
+}
+.coluna{
+    flex-grow: 1 ;
+    background-color: rgb(101, 76, 37);
+    border: 1px solid black;
+}
+.desativado{
+    flex-grow: 2;
+    background-color: rgba(256,256,256,0.7);
+}

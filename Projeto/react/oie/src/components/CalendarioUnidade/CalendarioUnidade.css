@@ -1,0 +1,23 @@
+
+.calendario-unidade{
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%;
+    background-color: aqua;
+    border: 1px solid white;
+}
+
+.imagem-foda{
+    display: inline-block;
+    background-color: black;
+    height: 100%;
+    width: 20%;
+}
+
+.quantidade-container{
+
+    display: inline-block;
+}

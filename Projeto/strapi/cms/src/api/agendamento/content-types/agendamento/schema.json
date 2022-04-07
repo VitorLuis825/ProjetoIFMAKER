@@ -12,17 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nome": {
-      "type": "string"
+    "nomes": {
+      "type": "string",
+      "required": true
     },
     "tel": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "horarioEntrada": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "horarioSaida": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "equipamentos": {
       "type": "relation",
